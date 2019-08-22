@@ -498,7 +498,7 @@ ul.extrapages li a {
     cursor: pointer;
 }
 
-input[type="radio"] {
+.subscribe input[type="radio"] {
     position: absolute;
     left: -9999px;
     }
