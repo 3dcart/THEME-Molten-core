@@ -32,7 +32,7 @@ function addcart_callback(productDiv, data) {
         itemsInCart += item.qty;
         subtotal += (item.price * item.qty);
     });
-	//minicart - subtotal
+    //minicart - subtotal
     subtotal = subtotal.toFixed(jQuery('body').data('decimal'));
     jQuery('.minicart-items').text(itemsInCart);
     update_flyoutcart();
@@ -87,13 +87,13 @@ function moveMenu() {
         jQuery('#menulinks').appendTo('#mobile-menulinks');
         jQuery('#categories').appendTo('#mobile-categories');
 
-        jQuery('#searchBox').appendTo('#search-mobile');
+        //jQuery('#searchBox').appendTo('#search-mobile');
     }
     else {
         jQuery('#menulinks').appendTo('#menulinks-outer');
         jQuery('#categories').appendTo('#navbar');
 
-        jQuery('#searchBox').appendTo('#modal-body-mobile');
+        //jQuery('#searchBox').appendTo('#modal-body-mobile');
     }
 }
 
@@ -122,17 +122,17 @@ jQuery(document).ready(function () {
 
     var respWidth = window.innerWidth;
     if (respWidth >= 767) {
-    	jQuery('.navbar .dropdown').hover(function () {
-    		jQuery(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown('fast');
+        jQuery('.navbar .dropdown').hover(function () {
+            jQuery(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown('fast');
 
-    	}, function () {
-    		jQuery(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp('fast');
+        }, function () {
+            jQuery(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp('fast');
 
-    	});
+        });
 
-    	jQuery('.navbar .dropdown > a').click(function () {
-    		location.href = this.href;
-    	});
+        jQuery('.navbar .dropdown > a').click(function () {
+            location.href = this.href;
+        });
     }
 
 });
@@ -145,16 +145,16 @@ jQuery(window).resize(function () {
 });
 
 jQuery(function ($) {
-	$('.navbar .dropdown').hover(function () {
-		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+    $('.navbar .dropdown').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
 
-	}, function () {
-		$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
 
-	});
+    });
 
-	$('.navbar .dropdown > a').click(function () {
-		location.href = this.href;
-	});
+    $('.navbar .dropdown > a').click(function () {
+        location.href = this.href;
+    });
 
 });
