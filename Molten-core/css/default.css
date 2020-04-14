@@ -805,6 +805,7 @@ span.freeshipping {
     }
     .search-form-col {
         clear: both;
+		display: none;
     }
     .flex-direction-nav a:before {
         font-size: 24px;
